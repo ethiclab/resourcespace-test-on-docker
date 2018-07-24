@@ -1,5 +1,6 @@
 #!/bin/bash
 cp /tmp/config.php /tmp/resourcespace/include/config.php
+mkdir /tmp/resourcespace/filestore
 service mysql start &&
 mysql < /tmp/ini.sql &&
 php -c /tmp/php.ini test.php
